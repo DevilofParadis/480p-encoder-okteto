@@ -9,7 +9,7 @@ class Config(object):
     LOG_CHANNEL = get_config("LOG_CHANNEL")
     UPDATES_CHANNEL = get_config("UPDATES_CHANNEL", None) # Without `@` LOL
      # Get these values from my.telegram.org
-    AUTH_USERS = set(6265459491, 2036803347)
+    AUTH_USERS = set(
         int(x) for x in get_config(
             "AUTH_USERS",
             should_prompt=True
