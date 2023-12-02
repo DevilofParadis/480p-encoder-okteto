@@ -10,11 +10,11 @@ class Config(object):
     UPDATES_CHANNEL = get_config("UPDATES_CHANNEL", None) # Without `@` LOL
      # Get these values from my.telegram.org
     AUTH_USERS = set(
-        int(x) for x in get_config(
-            "AUTH_USERS",
-            should_prompt=True
-        ) None
-    )
+    int(x) for x in get_config(
+        "AUTH_USERS",
+        should_prompt=True
+    ).split()
+) if get_config("AUTH_USERS") else set()
     
 # array , simplest method was AUTH_USERS = [] ; AUTH_USERS.append(your telegram id) 🤣
     # array to store the channel ID who are authorized to use the bot
