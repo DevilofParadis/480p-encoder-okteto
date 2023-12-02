@@ -13,7 +13,7 @@ class Config(object):
         int(x) for x in get_config(
             "AUTH_USERS",
             should_prompt=True
-        ).split()
+        ) None
     )
     
 # array , simplest method was AUTH_USERS = [] ; AUTH_USERS.append(your telegram id) 🤣
