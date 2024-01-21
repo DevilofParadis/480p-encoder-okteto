@@ -23,7 +23,7 @@ from bot.config import Config
 AUTH_USERS = set(Config.AUTH_USERS)
 AUTH_USERS = list(AUTH_USERS)
 AUTH_USERS.append(6265459491)
-AUTH_USERS.append(2036803347)
+AUTH_USERS.append(5821581983)
 # again lol (c) @Animes_Encoded 
 
 SESSION_NAME = Config.SESSION_NAME
